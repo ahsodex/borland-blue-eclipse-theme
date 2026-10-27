@@ -1,0 +1,418 @@
+/*******************************************************************************
+ * Borland Blue for the Eclipse IDE
+ *
+ * Workbench chrome for the Borland Blue theme. The stock dark theme is imported
+ * for its widget coverage and every hard-coded gray it uses is re-colored below.
+ *
+ * Palette (shared with the VS Code theme):
+ *   editor         #00008B / #F2F200   (Vim darkBlue / yellow)
+ *   views, panels  #001553 / #B0B8CC
+ *   frame, headers #00103E
+ *   inputs         #00185A
+ *   hovers         #001A5D
+ *   title bar      #002D80
+ *   status bar     #003C99 / #47D0FF
+ *   borders        #254A9A, #2E58B2
+ *   accent         #6FE7FF
+ *   tabs           #00134A (inactive), #00206F (hover)
+ *   selection      #0B5C8E
+ ******************************************************************************/
+
+@import url("platform:/plugin/org.eclipse.ui.themes/css/common/e4_globalstyle.css");
+@import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_ide_colorextensions.css");
+@import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_globalstyle.css");
+@import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_partstyle.css");
+@import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark_tabstyle.css");
+@import url("platform:/plugin/org.eclipse.ui.themes/css/dark/e4-dark-drag-styling.css");
+@import url("platform:/plugin/io.github.ahsodex.borlandblue/css/borland-blue_colors.css");
+@import url("platform:/plugin/io.github.ahsodex.borlandblue/css/borland-blue_preferences.css");
+@import url("platform:/plugin/io.github.ahsodex.borlandblue/css/borland-blue_dbeaver.css");
+
+
+/* ################################ Global widgets ################################ */
+
+Combo,
+List,
+Text,
+Spinner,
+CCombo,
+DatePicker,
+DatePicker > Text,
+ScheduleDatePicker,
+ScheduleDatePicker > Text,
+Text[style~='SWT.SEARCH'] {
+    background-color: #00185A;
+    color: #B0B8CC;
+}
+
+Text[style~='SWT.READ_ONLY'] {
+    background-color: '#org-eclipse-ui-workbench-DARK_BACKGROUND';
+    color: #9AA9CD;
+}
+
+Button.disabled {
+    color: #7A8AA8;
+}
+
+Shell Tree,
+Shell Table,
+Shell List {
+    background-color: #00185A;
+}
+
+Tree,
+Table {
+    swt-lines-visible: false;
+    swt-header-color: #9EDFFF;
+    swt-header-background-color: #00103E;
+}
+
+Hyperlink,
+ImageHyperlink {
+    color: #6FE7FF;
+}
+
+ViewerPane,
+DrillDownComposite {
+    background-color: #001553;
+    color: #B0B8CC;
+}
+
+ProgressIndicator {
+    background-color: #00185A;
+    color: #47D0FF;
+}
+
+DiscoveryItem,
+DiscoveryItem Label,
+DiscoveryItem Composite,
+DiscoveryItem StyledText,
+WebSite {
+    background-color: #00185A;
+    color: #C7D1E6;
+}
+
+DiscoveryItem Link {
+    background-color: #00185A;
+    color: #6FE7FF;
+}
+
+CatalogSwitcher,
+CategoryItem {
+    color: #C7D1E6;
+}
+
+GradientCanvas,
+GradientCanvas > Label {
+    background-color: #00103E;
+    color: #9EDFFF;
+}
+
+GradientCanvas {
+    background: #00103E;
+}
+
+Twistie {
+    color: #86D9FF;
+}
+
+.MPartSashContainer {
+    background-color: #00103E;
+    color: #B0B8CC;
+}
+
+PageSiteComposite,
+PageSiteComposite > CImageLabel {
+    color: #B0B8CC;
+}
+
+PageSiteComposite > PropertyTable {
+    background-color: #001553;
+    color: #B0B8CC;
+}
+
+PageSiteComposite > PropertyTable:disabled {
+    background-color: #00134A;
+    color: #7A8AA8;
+}
+
+ExpandableComposite {
+    swt-titlebar-color: #9EDFFF;
+    tb-toggle-hover-color: #6FE7FF;
+    tb-toggle-color: #86D9FF;
+}
+
+TabbedPropertyTitle > CLabel {
+    color: #9EDFFF;
+}
+
+TabbedPropertyTitle {
+    swt-backgroundGradientStart-color: #00103E;
+    swt-backgroundGradientEnd-color: #00103E;
+    swt-backgroundBottomKeyline1-color: #254A9A;
+    swt-backgroundBottomKeyline2-color: #254A9A;
+}
+
+
+/* ################################ Forms ################################ */
+
+Form {
+    background-color: #001553;
+    color: #9EDFFF;
+    text-background-color: #001553;
+    tb-toggle-hover-color: #6FE7FF;
+    tb-toggle-color: #86D9FF;
+    h-hover-full-color: #00206F;
+    h-hover-light-color: #00206F;
+    h-bottom-keyline-2-color: #254A9A;
+    h-bottom-keyline-1-color: #254A9A;
+}
+
+FormHeading {
+    background-color: #001553;
+    color: #E0E4EE;
+}
+
+Section {
+    background-color: #001553;
+    color: #B0B8CC;
+    background-color-titlebar: #00103E;
+    background-color-gradient-titlebar: #00103E;
+    border-color-titlebar: #254A9A;
+    swt-titlebar-color: #9EDFFF;
+    tb-toggle-hover-color: #6FE7FF;
+    tb-toggle-color: #86D9FF;
+}
+
+.MPart Form,
+.MPart Form Section,
+.MPart Form Label,
+.MPart Form FormText,
+.MPart Form Link,
+.MPart Form Button,
+.MPart Form Group,
+.MPart Form ScrolledPageBook,
+.MPart Form DependenciesComposite,
+.MPart Form ListEditorComposite,
+.MPart Form Text[style~='SWT.READ_ONLY'],
+.MPart Form DependenciesComposite > SashForm > Section > *,
+.MPartStack .MPart Form MasterDetailsBlock-MDSashForm,
+.MPartStack .MPart Form SashForm,
+.MPartStack .MPart Form Sash,
+#org-eclipse-help-ui-HelpView Form,
+#org-eclipse-help-ui-HelpView Form Sash,
+#org-eclipse-help-ui-HelpView Form Label,
+#org-eclipse-help-ui-HelpView Form Section,
+#org-eclipse-help-ui-HelpView Form FormText,
+#org-eclipse-help-ui-HelpView Form Button,
+#org-eclipse-help-ui-HelpView Form Group,
+#org-eclipse-help-ui-HelpView Form ScrolledPageBook,
+#org-eclipse-help-ui-HelpView Form Text[style~='SWT.READ_ONLY'] {
+    background-color: #001553;
+    color: #C7D1E6;
+}
+
+.MPart Form Button[style~='SWT.CHECK'],
+.MPart Form Button[style~='SWT.RADIO'] {
+    background-color: inherit;
+    color: #C7D1E6;
+}
+
+.MPart Form Section Tree {
+    background-color: #00185A;
+    color: #B0B8CC;
+}
+
+
+/* ################################ Parts (views and editors) ################################ */
+
+.MPart {
+    background-color: #001553;
+    color: #B0B8CC;
+}
+
+.MPart Composite,
+.MPart Composite > *,
+.MPart Composite > * > *,
+.MPart Label,
+.MPart ScrolledForm,
+.MPart Section,
+.MPart FormText,
+.MPart Link,
+.MPart Sash,
+.MPart Button,
+.MPart Group,
+.MPart SashForm,
+.MPart Tree,
+.MPart FilteredTree,
+.MPart RegistryFilteredTree,
+.MPart PageSiteComposite,
+.MPart DependenciesComposite,
+.MPart Text[style~='SWT.READ_ONLY'],
+.MPart FigureCanvas,
+.MPart ListEditorComposite,
+.MPart ScrolledComposite,
+.MPart ScrolledComposite ProgressInfoItem,
+.MPart Form ScrolledPageBook,
+.MPart Table,
+.MPart Browser,
+.MPart OleFrame,
+.MPart ViewForm,
+.MPart ViewForm > CLabel,
+.MPart PageBook > Label,
+.MPart PageBook > SashForm,
+.MPartStack.active Table {
+    background-color: #001553;
+    color: #B0B8CC;
+}
+
+.MPart Section > Label {
+    background-color: #001553;
+    color: #9EDFFF;
+}
+
+.MPart Section Tree {
+    background-color: #00185A;
+    color: #B0B8CC;
+}
+
+.MPart DatePicker,
+.MPart DatePicker > Text,
+.MPart ScheduleDatePicker,
+.MPart ScheduleDatePicker > Text,
+.MPart CCombo,
+.MPart Spinner,
+.MPart Composite > StyledText,
+.MPart PageBook > SashForm Label,
+.MPart SashForm > Text[style~='SWT.BORDER'] {
+    background-color: #00185A;
+    color: #B0B8CC;
+}
+
+#org-eclipse-ui-console-ConsoleView .MPart > Composite,
+#org-eclipse-ui-console-ConsoleView .MPart StyledText,
+#org-eclipse-ui-console-ConsoleView .MPart PageBook Label {
+    background-color: #001553;
+    color: #BDC7DA;
+}
+
+#org-eclipse-jdt-ui-SourceView StyledText,
+#org-eclipse-wst-jsdt-ui-SourceView StyledText {
+    background-color: #00008B;
+}
+
+#org-eclipse-e4-ui-compatibility-editor Canvas,
+#org-eclipse-e4-ui-compatibility-editor Canvas > * {
+    background-color: #00008B;
+}
+
+#org-eclipse-e4-ui-compatibility-editor LayoutCanvas {
+    background-color: #00008B;
+    color: #B0B8CC;
+}
+
+/* Java editor breadcrumb */
+#BreadcrumbComposite > Composite,
+#BreadcrumbItemComposite,
+#BreadcrumbItemDetailComposite,
+#BreadcrumbItemDetailTextComposite,
+#BreadcrumbItemDetailImageComposite,
+#BreadcrumbItemDetailTextLabel,
+#BreadcrumbItemDetailImageLabel,
+#BreadcrumbItemDropDownToolBar {
+    background-color: #00008B;
+    color: #B0B8CC;
+}
+
+
+/* ################################ Tabs ################################ */
+
+CTabFolder Canvas {
+    background-color: #001553;
+    color: #B0B8CC;
+}
+
+CTabFolder Scale {
+    background-color: inherit;
+}
+
+CTabFolder {
+    swt-unselected-hot-tab-color-background: #00206F;
+}
+
+CTabFolder.active {
+    swt-selected-tab-highlight: #6FE7FF;
+    swt-selected-highlight-top: false;
+}
+
+CTabItem.busy {
+    color: #7A8AA8;
+}
+
+.MPartStack {
+    swt-selected-tab-highlight: #2E58B2;
+    swt-selected-highlight-top: false;
+    swt-draw-custom-tab-content-background: true;
+    swt-unselected-hot-tab-color-background: #00206F;
+}
+
+.MPartStack.active {
+    swt-selected-tab-highlight: #6FE7FF;
+    swt-selected-highlight-top: false;
+}
+
+CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'],
+.MPartStack CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'] {
+    swt-unselected-hot-tab-color-background: #00206F;
+    swt-selected-tab-highlight: #2E58B2;
+    swt-selected-highlight-top: true;
+}
+
+.MPartStack.active CTabFolder[style~='SWT.DOWN'][style~='SWT.BOTTOM'] {
+    swt-selected-tab-highlight: #6FE7FF;
+    swt-selected-highlight-top: true;
+}
+
+/* The selected editor tab blends into the editor below it. */
+#org-eclipse-ui-editorss CTabFolder {
+    swt-selected-tab-fill: #00008B;
+    swt-selected-tab-highlight: #2E58B2;
+    swt-selected-highlight-top: true;
+    swt-draw-custom-tab-content-background: true;
+    swt-unselected-hot-tab-color-background: #00206F;
+}
+
+#org-eclipse-ui-editorss CTabFolder.active {
+    swt-selected-tab-highlight: #6FE7FF;
+    swt-selected-highlight-top: true;
+}
+
+#org-eclipse-ui-editorss CTabItem:selected {
+    color: #E0E4EE;
+}
+
+
+/* ################################ Title bar and status bar ################################ */
+
+.MTrimBar#org-eclipse-ui-main-toolbar,
+.MTrimBar#org-eclipse-ui-main-toolbar * {
+    background-color: #002D80;
+    color: #C7E7FF;
+}
+
+.MTrimBar#org-eclipse-ui-main-toolbar Text,
+.MTrimBar#org-eclipse-ui-main-toolbar Combo {
+    background-color: #00185A;
+    color: #B0B8CC;
+}
+
+.MTrimBar#org-eclipse-ui-trim-status,
+.MTrimBar#org-eclipse-ui-trim-status * {
+    background-color: #003C99;
+    color: #47D0FF;
+}
+
+HeapStatus {
+    background-color: #003C99;
+    color: #47D0FF;
+}

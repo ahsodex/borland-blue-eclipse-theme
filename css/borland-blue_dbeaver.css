@@ -1,0 +1,108 @@
+/*******************************************************************************
+ * Borland Blue for the Eclipse IDE
+ *
+ * DBeaver SQL editor and result set colors. Ignored when DBeaver is not
+ * installed.
+ ******************************************************************************/
+
+/* ############################## SQL editor ############################## */
+
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-text-background { color: #00008B; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-text-foreground { color: #F2F200; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-disabled-background { color: #001553; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-keyword-foreground { color: #E8EAF2; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-datatype-foreground { color: #F2AA43; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-function-foreground { color: #F269BD; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-string-foreground { color: #69DBF2; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-number-foreground { color: #69DBF2; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-comment-foreground { color: #9BA0AF; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-delimiter-foreground { color: #F2AA43; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-command-foreground { color: #63C675; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-parameter-foreground { color: #63C675; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-sqlVariable-foreground { color: #63C675; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-schema-foreground { color: #9AA9CD; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-table-foreground { color: #F2AA43; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-table-alias-foreground { color: #F2AA43; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-column-foreground { color: #B6BDCE; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-column-derived-foreground { color: #B6BDCE; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-composite-field-foreground { color: #B6BDCE; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-semanticError-foreground { color: #F27474; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-aiSuggestion-foreground { color: #7A8AA8; }
+ColorDefinition#org-jkiss-dbeaver-sql-editor-color-aiSuggestion-background { color: #00185A; }
+ColorDefinition#org-jkiss-dbeaver-ui-general-color-warning-foreground { color: #F9BF3B; }
+ColorDefinition#org-jkiss-dbeaver-ui-general-color-error-foreground { color: #FF4D4D; }
+
+
+/* ############################## Result set grid ############################## */
+
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-cell-odd-background { color: #00185A; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-selection-background { color: #0B5C8E; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-selection-foreground { color: #E0E4EE; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-preview-background { color: #001A5D; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-lines-normal { color: #00206F; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-lines-selected { color: #2E58B2; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-header-background { color: #00103E; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-header-foreground { color: #FFFFFF; }
+/* DBeaver mixes this 50% with white for any theme but its own Dark (#000040 shows as #7F7F9F). */
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-header-selected-background { color: #000040; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-header-border { color: #254A9A; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-cell-modified-background { color: #5A4500; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-cell-new-background { color: #00502E; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-cell-deleted-background { color: #5A0025; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-cell-readonly-background { color: #5A0025; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-cell-error-background { color: #7A0000; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-cell-matched-background { color: #7A5200; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-null-foreground { color: #7A8AA8; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-binary-foreground { color: #9AA9CD; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-boolean-foreground { color: #F2AA43; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-datetime-foreground { color: #63C675; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-numeric-foreground { color: #69DBF2; }
+ColorDefinition#org-jkiss-dbeaver-sql-resultset-color-string-foreground { color: #C7D1E6; }
+
+
+/* ############################## Transactions ############################## */
+
+ColorDefinition#org-jkiss-dbeaver-txn-color-committed-background { color: #00502E; }
+ColorDefinition#org-jkiss-dbeaver-txn-color-reverted-background { color: #5A0025; }
+ColorDefinition#org-jkiss-dbeaver-txn-color-transaction-background { color: #5A4500; }
+
+
+/* ############################## XML and hex editors ############################## */
+
+/* DBeaver's XML editor is the default for *.xml once DBeaver is installed. */
+ColorDefinition#org-jkiss-dbeaver-xml-editor-color-tag { color: #E8EAF2; }
+ColorDefinition#org-jkiss-dbeaver-xml-editor-color-text { color: #F2F200; }
+ColorDefinition#org-jkiss-dbeaver-xml-editor-color-comment { color: #9BA0AF; }
+ColorDefinition#org-jkiss-dbeaver-hex-editor-color-text { color: #F2F200; }
+ColorDefinition#org-jkiss-dbeaver-hex-editor-color-caret { color: #0B5C8E; }
+
+
+/* ############################## Database navigator ############################## */
+
+ColorDefinition#org-jkiss-dbeaver-ui-navigator-node-foreground { color: #9AA9CD; }
+ColorDefinition#org-jkiss-dbeaver-ui-navigator-node-transient-foreground { color: #63C675; }
+ColorDefinition#org-jkiss-dbeaver-ui-navigator-node-new-background { color: #00502E; }
+ColorDefinition#org-jkiss-dbeaver-ui-navigator-node-modified-background { color: #5A4500; }
+ColorDefinition#org-jkiss-dbeaver-ui-navigator-node-statistics-background { color: #00185A; }
+
+
+/* ############################## ER diagrams ############################## */
+
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-background { color: #001553; }
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-entity-regular-background { color: #00185A; }
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-entity-primary-background { color: #5A4500; }
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-entity-association-background { color: #00206F; }
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-attributes-background { color: #00206F; }
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-notes-background { color: #00206F; }
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-entity-name-foreground { color: #E0E4EE; }
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-attributes-foreground { color: #B0B8CC; }
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-notes-foreground { color: #B0B8CC; }
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-search-highlighting { color: #7A5200; }
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-fk-highlighting { color: #00502E; }
+ColorDefinition#org-jkiss-dbeaver-erd-diagram-lines-foreground { color: #43C5F2; }
+
+
+/* ############################## AI chat ############################## */
+
+ColorDefinition#org-jkiss-dbeaver-ui-sqlPresentation-aiChat-color-prompt-background { color: #00185A; }
+ColorDefinition#org-jkiss-dbeaver-ui-sqlPresentation-aiChat-color-prompt-border { color: #2E58B2; }

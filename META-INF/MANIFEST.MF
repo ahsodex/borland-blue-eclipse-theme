@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Borland Blue Theme
+Bundle-SymbolicName: io.github.ahsodex.borlandblue;singleton:=true
+Bundle-Version: 0.0.1
+Bundle-Vendor: ahsodex
+Require-Bundle: org.eclipse.e4.ui.css.swt.theme,
+ org.eclipse.ui.themes
+Automatic-Module-Name: io.github.ahsodex.borlandblue

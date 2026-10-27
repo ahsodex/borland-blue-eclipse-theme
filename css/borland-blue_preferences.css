@@ -1,0 +1,293 @@
+/*******************************************************************************
+ * Borland Blue for the Eclipse IDE
+ *
+ * Editor and syntax colors, applied as preference defaults while the theme is
+ * active. Colors you have changed yourself in Preferences are left alone.
+ *
+ * Syntax palette (from the VS Code theme):
+ *   text 242,242,0          comments 155,160,175 (italic)
+ *   keywords 232,234,242    strings, numbers, constants 105,219,242
+ *   types 242,170,67        functions, attributes 242,105,189
+ *   operators 242,170,67    identifiers 182,189,206
+ *   preprocessor 99,198,117
+ ******************************************************************************/
+
+/* ############################## Text editors ############################## */
+
+IEclipsePreferences#org-eclipse-ui-editors:borland-blue {
+    preferences:
+        'AbstractTextEditor.Color.Background.SystemDefault=false'
+        'AbstractTextEditor.Color.Foreground.SystemDefault=false'
+        'AbstractTextEditor.Color.SelectionBackground.SystemDefault=false'
+        'AbstractTextEditor.Color.SelectionForeground.SystemDefault=false'
+        'AbstractTextEditor.Color.Background=0,0,139'
+        'AbstractTextEditor.Color.Foreground=242,242,0'
+        'AbstractTextEditor.Color.SelectionBackground=10,89,135'
+        'AbstractTextEditor.Color.SelectionForeground=255,255,255'
+        'AbstractTextEditor.Color.FindScope=10,94,115'
+        'currentLineColor=0,0,170'
+        'lineNumberColor=67,197,242'
+        'printMarginColor=42,76,154'
+        'org.eclipse.ui.editors.stickyLinesSeparatorColor=42,76,154'
+        'hyperlinkColor=111,231,255'
+        'hyperlinkColor.SystemDefault=false'
+        'linked.focus.color=111,231,255'
+        'linked.slave.color=111,231,255'
+        'linked.target.color=73,214,255'
+        'linked.exit.color=99,198,117'
+        'occurrenceIndicationColor=32,41,156'
+        'writeOccurrenceIndicationColor=51,63,201'
+        'asOccurencesIndicationColor=32,41,156'
+        'matchingTagIndicationColor=32,41,156'
+        'TextOccurrenceIndicationColor=32,41,156'
+        'LSP4EReadOccurrenceIndicationColor=32,41,156'
+        'LSP4EWriteOccurrenceIndicationColor=51,63,201'
+        'LSP4ETextOccurrenceIndicationColor=32,41,156'
+        'TM4EMatchingPairColor=111,231,255'
+        'searchResultIndication=true'
+        'searchResultHighlighting=false'
+        'searchResultTextStyle=BOX'
+        'searchResultIndicationColor=249,191,59'
+        'filteredSearchResultIndicationColor=10,94,115'
+        'errorIndicationColor=255,77,77'
+        'warningIndicationColor=111,231,255'
+        'infoIndicationColor=73,214,255'
+        'taskIndicationColor=249,191,59'
+        'bookmarkIndicationColor=99,198,117'
+        'spellingIndicationColor=242,105,189'
+        'additionIndicationColor=20,110,60'
+        'changeIndicationColor=110,82,0'
+        'deletionIndicationColor=255,77,77'
+        'breakpointIndicationColor=73,214,255'
+        'currentIPColor=11,92,142'
+        'secondaryIPColor=8,73,117'
+        'overrideIndicatorColor=154,169,205'
+        'inlineDiffColor=0,60,90'
+        'detailedInlineDiffColor=0,95,110'
+        'deletionInlineDiffColor=70,0,90'
+        'detailedDeletionInlineDiffColor=110,0,90'
+}
+
+IEclipsePreferences#org-eclipse-ui-genericeditor:borland-blue {
+    preferences:
+        'matchingBracketsColor=111,231,255'
+}
+
+/* Generic Editor files (YAML, JSON, XML, shell, Perl, Markdown, ...) use the
+   bundled Borland Blue TextMate theme while this Eclipse theme is active. */
+IEclipsePreferences#org-eclipse-tm4e-ui:borland-blue {
+    preferences:
+        'org.eclipse.tm4e.ui.themes.defaultDarkTheme=io.github.ahsodex.borlandblue.textmate'
+}
+
+
+/* ############################## Workbench colors ############################## */
+
+IEclipsePreferences#org-eclipse-ui-workbench:borland-blue {
+    preferences:
+        'HYPERLINK_COLOR=111,231,255'
+        'ACTIVE_HYPERLINK_COLOR=154,242,255'
+        'ERROR_COLOR=255,77,77'
+        'QUALIFIER_COLOR=122,138,168'
+        'DECORATIONS_COLOR=154,169,205'
+        'COUNTER_COLOR=111,231,255'
+        'CONTENT_ASSIST_BACKGROUND_COLOR=0,26,93'
+        'CONTENT_ASSIST_FOREGROUND_COLOR=176,184,204'
+        'org.eclipse.ui.workbench.INFORMATION_BACKGROUND=0,26,93'
+        'org.eclipse.ui.workbench.INFORMATION_FOREGROUND=176,184,204'
+        'org.eclipse.ui.workbench.HOVER_BACKGROUND=0,26,93'
+        'org.eclipse.ui.workbench.HOVER_FOREGROUND=176,184,204'
+        'org.eclipse.ui.workbench.FORM_HEADING_ERROR_COLOR=255,77,77'
+        'org.eclipse.ui.workbench.FORM_HEADING_WARNING_COLOR=249,191,59'
+        'org.eclipse.ui.workbench.FORM_HEADING_INFO_COLOR=73,214,255'
+        'org.eclipse.ui.editors.rangeIndicatorColor=10,94,115'
+        'org.eclipse.ui.editors.inlineAnnotationColor=122,138,168'
+        'org.eclipse.search.ui.match.highlight=153,99,0'
+        'org.eclipse.jface.REVISION_NEWEST_COLOR=11,92,142'
+        'org.eclipse.jface.REVISION_OLDEST_COLOR=0,21,83'
+        'INCOMING_COLOR=73,214,255'
+        'OUTGOING_COLOR=224,228,238'
+        'CONFLICTING_COLOR=255,77,77'
+        'RESOLVED_COLOR=99,198,117'
+        'ADDITION_COLOR=99,198,117'
+        'DELETION_COLOR=255,77,77'
+        'EDITION_COLOR=224,228,238'
+}
+
+IEclipsePreferences#org-eclipse-ui-workbench:borland-blue-jdt {
+    preferences:
+        'org.eclipse.jdt.ui.Javadoc.backgroundColor=0,26,93'
+        'org.eclipse.jdt.ui.Javadoc.foregroundColor=176,184,204'
+        'org.eclipse.jdt.ui.DeclarationView.backgroundColor=0,0,139'
+        'org.eclipse.jdt.ui.ColoredLabels.inherited=154,169,205'
+        'org.eclipse.jdt.ui.ColoredLabels.match_highlight=153,99,0'
+        'org.eclipse.jdt.ui.ColoredLabels.writeaccess_highlight=153,60,0'
+}
+
+IEclipsePreferences#org-eclipse-ui-workbench:borland-blue-egit {
+    preferences:
+        'org.eclipse.egit.ui.CommitMessageCommentColor=155,160,175'
+        'org.eclipse.egit.ui.DiffAddBackgroundColor=0,80,50'
+        'org.eclipse.egit.ui.DiffAddForegroundColor=200,255,220'
+        'org.eclipse.egit.ui.DiffRemoveBackgroundColor=100,0,40'
+        'org.eclipse.egit.ui.DiffRemoveForegroundColor=255,220,230'
+        'org.eclipse.egit.ui.DiffHeadlineBackgroundColor=0,45,128'
+        'org.eclipse.egit.ui.DiffHeadlineForegroundColor=224,228,238'
+        'org.eclipse.egit.ui.DiffHunkBackgroundColor=0,60,153'
+        'org.eclipse.egit.ui.DiffHunkForegroundColor=71,208,255'
+        'org.eclipse.egit.ui.IgnoredResourceBackgroundColor=0,21,83'
+        'org.eclipse.egit.ui.IgnoredResourceForegroundColor=122,138,168'
+        'org.eclipse.egit.ui.UncommittedChangeBackgroundColor=0,21,83'
+        'org.eclipse.egit.ui.UncommittedChangeForegroundColor=111,231,255'
+}
+
+
+/* ############################## Java ############################## */
+
+IEclipsePreferences#org-eclipse-jdt-ui:borland-blue {
+    preferences:
+        'java_default=242,242,0'
+        'java_bracket=242,242,0'
+        'java_keyword=232,234,242'
+        'java_keyword_bold=false'
+        'java_keyword_return=232,234,242'
+        'java_keyword_return_bold=false'
+        'java_operator=242,170,67'
+        'java_operator_bold=true'
+        'java_string=105,219,242'
+        'java_single_line_comment=155,160,175'
+        'java_single_line_comment_italic=true'
+        'java_multi_line_comment=155,160,175'
+        'java_multi_line_comment_italic=true'
+        'java_comment_task_tag=249,191,59'
+        'java_comment_task_tag_bold=true'
+        'java_doc_default=155,160,175'
+        'java_doc_default_italic=true'
+        'java_doc_keyword=232,234,242'
+        'java_doc_tag=242,105,189'
+        'java_doc_link=105,219,242'
+        'matchingBracketsColor=111,231,255'
+        'content_assist_parameters_background=0,26,93'
+        'content_assist_parameters_foreground=176,184,204'
+        'content_assist_completion_replacement_background=249,191,59'
+        'content_assist_completion_replacement_foreground=0,0,0'
+        'sourceHoverBackgroundColor=0,26,93'
+        'javadocElementsStyling.darkModeDefaultColors=true'
+        'pf_coloring_key=232,234,242'
+        'pf_coloring_value=105,219,242'
+        'pf_coloring_assignment=242,170,67'
+        'pf_coloring_argument=99,198,117'
+        'pf_coloring_comment=155,160,175'
+        'semanticHighlighting.class.color=242,170,67'
+        'semanticHighlighting.class.enabled=true'
+        'semanticHighlighting.abstractClass.color=242,170,67'
+        'semanticHighlighting.abstractClass.enabled=true'
+        'semanticHighlighting.interface.color=242,170,67'
+        'semanticHighlighting.interface.enabled=true'
+        'semanticHighlighting.enum.color=242,170,67'
+        'semanticHighlighting.enum.enabled=true'
+        'semanticHighlighting.record.color=242,170,67'
+        'semanticHighlighting.record.enabled=true'
+        'semanticHighlighting.typeParameter.color=242,170,67'
+        'semanticHighlighting.typeParameter.enabled=true'
+        'semanticHighlighting.typeArgument.color=242,170,67'
+        'semanticHighlighting.typeArgument.enabled=true'
+        'semanticHighlighting.annotation.color=242,170,67'
+        'semanticHighlighting.annotation.enabled=true'
+        'semanticHighlighting.annotationElementReference.color=182,189,206'
+        'semanticHighlighting.annotationElementReference.enabled=true'
+        'semanticHighlighting.methodDeclarationName.color=242,105,189'
+        'semanticHighlighting.methodDeclarationName.enabled=true'
+        'semanticHighlighting.methodDeclarationName.bold=false'
+        'semanticHighlighting.method.color=242,105,189'
+        'semanticHighlighting.method.enabled=true'
+        'semanticHighlighting.staticMethodInvocation.color=242,105,189'
+        'semanticHighlighting.staticMethodInvocation.enabled=true'
+        'semanticHighlighting.abstractMethodInvocation.color=242,105,189'
+        'semanticHighlighting.abstractMethodInvocation.enabled=true'
+        'semanticHighlighting.inheritedMethodInvocation.color=242,105,189'
+        'semanticHighlighting.inheritedMethodInvocation.enabled=true'
+        'semanticHighlighting.localVariableDeclaration.color=182,189,206'
+        'semanticHighlighting.localVariableDeclaration.enabled=true'
+        'semanticHighlighting.localVariableDeclaration.bold=false'
+        'semanticHighlighting.localVariable.color=182,189,206'
+        'semanticHighlighting.localVariable.enabled=true'
+        'semanticHighlighting.parameterVariable.color=182,189,206'
+        'semanticHighlighting.parameterVariable.enabled=true'
+        'semanticHighlighting.field.color=182,189,206'
+        'semanticHighlighting.field.enabled=true'
+        'semanticHighlighting.inheritedField.color=182,189,206'
+        'semanticHighlighting.staticField.color=182,189,206'
+        'semanticHighlighting.staticField.enabled=true'
+        'semanticHighlighting.staticFinalField.color=105,219,242'
+        'semanticHighlighting.staticFinalField.enabled=true'
+        'semanticHighlighting.number.color=105,219,242'
+        'semanticHighlighting.number.enabled=true'
+        'semanticHighlighting.deprecatedMember.color=182,189,206'
+        'semanticHighlighting.deprecatedMember.enabled=true'
+        'semanticHighlighting.deprecatedMember.strikethrough=true'
+        'semanticHighlighting.autoboxing.color=242,170,67'
+        'semanticHighlighting.restrictedKeywords.color=232,234,242'
+        'semanticHighlighting.restrictedKeywords.bold=false'
+}
+
+
+/* ############################## Debug console ############################## */
+
+IEclipsePreferences#org-eclipse-debug-ui:borland-blue {
+    preferences:
+        'org.eclipse.debug.ui.consoleBackground=0,21,83'
+        'org.eclipse.debug.ui.outColor=189,199,218'
+        'org.eclipse.debug.ui.inColor=99,198,117'
+        'org.eclipse.debug.ui.errorColor=242,73,73'
+        'org.eclipse.debug.ui.changedDebugElement=249,191,59'
+        'org.eclipse.debug.ui.PREF_CHANGED_VALUE_BACKGROUND=11,92,142'
+        'org.eclipse.debug.ui.MemoryHistoryKnownColor=224,228,238'
+        'org.eclipse.debug.ui.MemoryHistoryUnknownColor=122,138,168'
+}
+
+
+/* ############################## Terminal ############################## */
+
+/* Same as the VS Code terminal; otherwise it inherits the editor's blue and yellow. */
+IEclipsePreferences#org-eclipse-terminal-control:borland-blue {
+    preferences:
+        'BACKGROUND=25,26,27'
+        'FOREGROUND=204,204,204'
+}
+
+
+/* ############################## Ant editor ############################## */
+
+IEclipsePreferences#org-eclipse-ant-ui:borland-blue {
+    preferences:
+        'org.eclipse.ant.ui.textColor=242,242,0'
+        'org.eclipse.ant.ui.tagsColor=232,234,242'
+        'org.eclipse.ant.ui.tagsColor_bold=false'
+        'org.eclipse.ant.ui.constantStringsColor=105,219,242'
+        'org.eclipse.ant.ui.constantStringsColor_italic=false'
+        'org.eclipse.ant.ui.commentsColor=155,160,175'
+        'org.eclipse.ant.ui.processingInstructionsColor=99,198,117'
+        'org.eclipse.ant.ui.processingInstructionsColor_bold=false'
+        'org.eclipse.ant.ui.dtdColor=99,198,117'
+        'org.eclipse.ant.ui.errorColor=242,73,73'
+        'org.eclipse.ant.ui.warningColor=249,191,59'
+        'org.eclipse.ant.ui.informationColor=189,199,218'
+        'org.eclipse.ant.ui.verboseColor=154,169,205'
+        'org.eclipse.ant.ui.debugColor=122,138,168'
+}
+
+
+/* ############################## Markup (Mylyn WikiText) editor ############################## */
+
+IEclipsePreferences#org-eclipse-mylyn-wikitext-ui:borland-blue {
+    preferences:
+        'block-h1=font-size: 120%; font-weight: bold; color: #F2F2F2;'
+        'block-h2=font-size: 110%; font-weight: bold; color: #F2F2F2;'
+        'block-h3=font-size: 105%; font-weight: bold; color: #F2F2F2;'
+        'block-h4=font-weight: bold; color: #F2F2F2;'
+        'block-h5=font-size: 90%; font-weight: bold; color: #F2F2F2;'
+        'block-h6=font-size: 80%; font-weight: bold; color: #F2F2F2;'
+        'phrase-code=font-family: monospace; color: #69DBF2;'
+        'block-bc=font-family: monospace; color: #69DBF2;'
+}

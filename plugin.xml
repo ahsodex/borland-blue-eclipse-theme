@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <!-- The id must contain "dark": Eclipse uses it to switch SWT (title bar,
+        scroll bars, menus) into dark mode and to classify the theme. -->
+   <extension point="org.eclipse.e4.ui.css.swt.theme">
+      <theme
+            basestylesheeturi="css/borland-blue.css"
+            id="io.github.ahsodex.borlandblue.dark"
+            label="Borland Blue">
+      </theme>
+   </extension>
+
+   <!-- TextMate (TM4E) theme for the Generic Editor: YAML, JSON, XML, shell, Perl, Markdown, ... -->
+   <extension point="org.eclipse.tm4e.ui.themes">
+      <theme
+            id="io.github.ahsodex.borlandblue.textmate"
+            name="Borland Blue"
+            path="textmate/borland-blue-color-theme.json"
+            dark="true" />
+   </extension>
+</plugin>
